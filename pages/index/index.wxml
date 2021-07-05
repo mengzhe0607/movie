@@ -1,0 +1,79 @@
+<view class="container">
+  <view class="header">
+
+    <view class="search">
+      <input class="search-input" placeholder="电影搜索" placeholder-class="placeholder-input" />
+      <view class="more">
+        <image src="../../images/more.png"></image>
+      </view>
+    </view>
+
+
+  </view>
+  <view class="swiper">
+    <swiper class="u-wrp" indicator-dots="true" indicator-color="rgba(255.255.255.0.8)" autoplay="true" interval="2000"
+      duration="1000" circular="true">
+      <block wx:for="{{bnrUrl}}">
+        <swiper-item>
+          <image class="u-img" src="{{item.url}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="menu">
+    <view class="menu-images">
+      <image src="../../images/1.png"></image>
+      <text>爱情电影</text>
+    </view>
+    <view class="menu-images">
+      <image src="../../images/2.png"></image>
+      <text>科幻电影</text>
+    </view>
+    <view class="menu-images">
+      <image src="../../images/3.png"></image>
+      <text>恐怖电影</text>
+    </view>
+    <view class="menu-images">
+      <image src="../../images/4.png"></image>
+      <text>喜剧电影</text>
+    </view>
+  </view>
+  <view class="information">
+    <view class="content">
+      <view class="information-left">
+        <image src="../../images/01.jpg"></image>
+      </view>
+      <view class="information-right">
+        <text>该片改编自斯蒂芬·金《四季奇谭》中收录的同名小说，该片中涵盖全片的主题是“希望”，全片透过监狱这一强制剥夺自由、高度强调纪律的特殊背景来展现作为个体的人对“时间流逝、环境改造”的恐惧.</text>
+        <button type="primary" size="mini">点击播放</button>
+      </view>
+    </view>
+    <view class="content">
+      <view class="information-left">
+        <image src="../../images/02.jpg"></image>
+      </view>
+      <view class="information-right">
+        <text>《火星救援》  该片根据安迪·威尔的同名小说改编，讲述了由于一场沙尘暴，马克与他的团队失联，孤身一人置身于火星面临着飞船损毁，想方设法回地球的故事。</text>
+        <button type="primary" size="mini">点击播放</button>
+      </view>
+    </view>
+    <view class="content">
+      <view class="information-left">
+        <image src="../../images/03.jpg"></image>
+      </view>
+      <view class="information-right">
+        <text>《星际穿越》（Interstellar）是克里斯托弗·诺兰执导的一部原创科幻冒险电影，主要讲述了一队探险家利用他们针对虫洞的新发现，超越人类对于太空旅行的极限，从而开始在广袤的宇宙中进行星际航行的故事.</text>
+        <button type="primary" size="mini">点击播放</button>
+      </view>
+    </view>
+    <view class="content">
+      <view class="information-left">
+        <image src="../../images/04.jpg"></image>
+      </view>
+      <view class="information-right">
+        <text>《复仇者联盟4：终局之战》是由美国漫威影业公司出品的科幻电影，影片改编自美国漫威漫画，讲述了在《复仇者联盟3：无限战争》的毁灭性事件过后，复仇者联盟在剩余盟友的帮助下再一次集结，逆转过去，重新创造希望的故事。</text>
+        <button type="primary" size="mini">点击播放</button>
+      </view>
+    </view>
+  </view>
+</view>
